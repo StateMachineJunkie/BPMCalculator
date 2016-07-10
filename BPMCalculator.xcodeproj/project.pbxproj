@@ -7,14 +7,54 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5CCE113A1D2EC6F100F78F2A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CCE11391D2EC6F100F78F2A /* main.m */; };
+		5CCE113D1D2EC6F100F78F2A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CCE113C1D2EC6F100F78F2A /* AppDelegate.m */; };
+		5CCE11401D2EC6F100F78F2A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CCE113F1D2EC6F100F78F2A /* ViewController.m */; };
+		5CCE11431D2EC6F100F78F2A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5CCE11411D2EC6F100F78F2A /* Main.storyboard */; };
+		5CCE11451D2EC6F100F78F2A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5CCE11441D2EC6F100F78F2A /* Assets.xcassets */; };
+		5CCE11481D2EC6F100F78F2A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5CCE11461D2EC6F100F78F2A /* LaunchScreen.storyboard */; };
+		5CCE114D1D2EC6FA00F78F2A /* BPMCalculator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5CCE11261D24909000F78F2A /* BPMCalculator.cpp */; };
+		5CCE114F1D2EC70F00F78F2A /* LegacyBPMCalculator.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5CCE112B1D2EB5A900F78F2A /* LegacyBPMCalculator.mm */; };
+		5CCE11651D2FEF8900F78F2A /* BPMCalculatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CCE11641D2FEF8900F78F2A /* BPMCalculatorTests.swift */; };
 		5CF2BC901CF6C2B6001EFBC5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CF2BC8F1CF6C2B6001EFBC5 /* AppDelegate.swift */; };
 		5CF2BC921CF6C2B6001EFBC5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CF2BC911CF6C2B6001EFBC5 /* ViewController.swift */; };
 		5CF2BC951CF6C2B6001EFBC5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5CF2BC931CF6C2B6001EFBC5 /* Main.storyboard */; };
 		5CF2BC971CF6C2B6001EFBC5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5CF2BC961CF6C2B6001EFBC5 /* Assets.xcassets */; };
 		5CF2BC9A1CF6C2B6001EFBC5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5CF2BC981CF6C2B6001EFBC5 /* LaunchScreen.storyboard */; };
+		5CF2BCA21CF6C2D1001EFBC5 /* BPMCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CF2BCA11CF6C2D1001EFBC5 /* BPMCalculator.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		5CCE11671D2FEF8900F78F2A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5CF2BC841CF6C2B6001EFBC5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5CF2BC8B1CF6C2B6001EFBC5;
+			remoteInfo = BPMCalculator;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		5CCE11261D24909000F78F2A /* BPMCalculator.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = BPMCalculator.cpp; path = "../BPMCalculator/Original Code/BPMCalculator.cpp"; sourceTree = "<group>"; };
+		5CCE11271D24909000F78F2A /* BPMCalculator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BPMCalculator.h; path = "../BPMCalculator/Original Code/BPMCalculator.h"; sourceTree = "<group>"; };
+		5CCE11291D2EB5A800F78F2A /* BPMCalculator-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BPMCalculator-Bridging-Header.h"; sourceTree = "<group>"; };
+		5CCE112A1D2EB5A900F78F2A /* LegacyBPMCalculator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LegacyBPMCalculator.h; sourceTree = "<group>"; };
+		5CCE112B1D2EB5A900F78F2A /* LegacyBPMCalculator.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = LegacyBPMCalculator.mm; sourceTree = "<group>"; };
+		5CCE112E1D2EB8C800F78F2A /* LegacyBPMCalculatorProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LegacyBPMCalculatorProxy.h; sourceTree = "<group>"; };
+		5CCE112F1D2EB8C800F78F2A /* LegacyBPMCalculatorProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LegacyBPMCalculatorProxy.m; sourceTree = "<group>"; };
+		5CCE11361D2EC6F100F78F2A /* LegacyBPMCalculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LegacyBPMCalculator.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5CCE11391D2EC6F100F78F2A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		5CCE113B1D2EC6F100F78F2A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		5CCE113C1D2EC6F100F78F2A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		5CCE113E1D2EC6F100F78F2A /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		5CCE113F1D2EC6F100F78F2A /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		5CCE11421D2EC6F100F78F2A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		5CCE11441D2EC6F100F78F2A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5CCE11471D2EC6F100F78F2A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		5CCE11491D2EC6F100F78F2A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5CCE11621D2FEF8900F78F2A /* BPMCalculatorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BPMCalculatorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5CCE11641D2FEF8900F78F2A /* BPMCalculatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BPMCalculatorTests.swift; sourceTree = "<group>"; };
+		5CCE11661D2FEF8900F78F2A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5CF2BC8C1CF6C2B6001EFBC5 /* BPMCalculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BPMCalculator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5CF2BC8F1CF6C2B6001EFBC5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5CF2BC911CF6C2B6001EFBC5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,9 +62,24 @@
 		5CF2BC961CF6C2B6001EFBC5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5CF2BC991CF6C2B6001EFBC5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5CF2BC9B1CF6C2B6001EFBC5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5CF2BCA11CF6C2D1001EFBC5 /* BPMCalculator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BPMCalculator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		5CCE11331D2EC6F100F78F2A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5CCE115F1D2FEF8900F78F2A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		5CF2BC891CF6C2B6001EFBC5 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -35,10 +90,60 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5CCE112D1D2EB77E00F78F2A /* Adapter */ = {
+			isa = PBXGroup;
+			children = (
+				5CCE11291D2EB5A800F78F2A /* BPMCalculator-Bridging-Header.h */,
+				5CCE112A1D2EB5A900F78F2A /* LegacyBPMCalculator.h */,
+				5CCE112B1D2EB5A900F78F2A /* LegacyBPMCalculator.mm */,
+				5CCE112E1D2EB8C800F78F2A /* LegacyBPMCalculatorProxy.h */,
+				5CCE112F1D2EB8C800F78F2A /* LegacyBPMCalculatorProxy.m */,
+			);
+			name = Adapter;
+			sourceTree = "<group>";
+		};
+		5CCE11371D2EC6F100F78F2A /* LegacyBPMCalculator */ = {
+			isa = PBXGroup;
+			children = (
+				5CCE11261D24909000F78F2A /* BPMCalculator.cpp */,
+				5CCE11271D24909000F78F2A /* BPMCalculator.h */,
+				5CCE113B1D2EC6F100F78F2A /* AppDelegate.h */,
+				5CCE113C1D2EC6F100F78F2A /* AppDelegate.m */,
+				5CCE113E1D2EC6F100F78F2A /* ViewController.h */,
+				5CCE113F1D2EC6F100F78F2A /* ViewController.m */,
+				5CCE11411D2EC6F100F78F2A /* Main.storyboard */,
+				5CCE11441D2EC6F100F78F2A /* Assets.xcassets */,
+				5CCE11461D2EC6F100F78F2A /* LaunchScreen.storyboard */,
+				5CCE11491D2EC6F100F78F2A /* Info.plist */,
+				5CCE11381D2EC6F100F78F2A /* Supporting Files */,
+			);
+			path = LegacyBPMCalculator;
+			sourceTree = "<group>";
+		};
+		5CCE11381D2EC6F100F78F2A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				5CCE11391D2EC6F100F78F2A /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		5CCE11631D2FEF8900F78F2A /* BPMCalculatorTests */ = {
+			isa = PBXGroup;
+			children = (
+				5CCE11641D2FEF8900F78F2A /* BPMCalculatorTests.swift */,
+				5CCE11661D2FEF8900F78F2A /* Info.plist */,
+			);
+			path = BPMCalculatorTests;
+			sourceTree = "<group>";
+		};
 		5CF2BC831CF6C2B6001EFBC5 = {
 			isa = PBXGroup;
 			children = (
+				5CCE112D1D2EB77E00F78F2A /* Adapter */,
 				5CF2BC8E1CF6C2B6001EFBC5 /* BPMCalculator */,
+				5CCE11631D2FEF8900F78F2A /* BPMCalculatorTests */,
+				5CCE11371D2EC6F100F78F2A /* LegacyBPMCalculator */,
 				5CF2BC8D1CF6C2B6001EFBC5 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -47,6 +152,8 @@
 			isa = PBXGroup;
 			children = (
 				5CF2BC8C1CF6C2B6001EFBC5 /* BPMCalculator.app */,
+				5CCE11361D2EC6F100F78F2A /* LegacyBPMCalculator.app */,
+				5CCE11621D2FEF8900F78F2A /* BPMCalculatorTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -60,6 +167,7 @@
 				5CF2BC961CF6C2B6001EFBC5 /* Assets.xcassets */,
 				5CF2BC981CF6C2B6001EFBC5 /* LaunchScreen.storyboard */,
 				5CF2BC9B1CF6C2B6001EFBC5 /* Info.plist */,
+				5CF2BCA11CF6C2D1001EFBC5 /* BPMCalculator.swift */,
 			);
 			path = BPMCalculator;
 			sourceTree = "<group>";
@@ -67,6 +175,41 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		5CCE11351D2EC6F100F78F2A /* LegacyBPMCalculator */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5CCE114A1D2EC6F100F78F2A /* Build configuration list for PBXNativeTarget "LegacyBPMCalculator" */;
+			buildPhases = (
+				5CCE11321D2EC6F100F78F2A /* Sources */,
+				5CCE11331D2EC6F100F78F2A /* Frameworks */,
+				5CCE11341D2EC6F100F78F2A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LegacyBPMCalculator;
+			productName = LegacyBPMCalculator;
+			productReference = 5CCE11361D2EC6F100F78F2A /* LegacyBPMCalculator.app */;
+			productType = "com.apple.product-type.application";
+		};
+		5CCE11611D2FEF8900F78F2A /* BPMCalculatorTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5CCE11691D2FEF8A00F78F2A /* Build configuration list for PBXNativeTarget "BPMCalculatorTests" */;
+			buildPhases = (
+				5CCE115E1D2FEF8900F78F2A /* Sources */,
+				5CCE115F1D2FEF8900F78F2A /* Frameworks */,
+				5CCE11601D2FEF8900F78F2A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5CCE11681D2FEF8900F78F2A /* PBXTargetDependency */,
+			);
+			name = BPMCalculatorTests;
+			productName = BPMCalculatorTests;
+			productReference = 5CCE11621D2FEF8900F78F2A /* BPMCalculatorTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		5CF2BC8B1CF6C2B6001EFBC5 /* BPMCalculator */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5CF2BC9E1CF6C2B6001EFBC5 /* Build configuration list for PBXNativeTarget "BPMCalculator" */;
@@ -94,6 +237,13 @@
 				LastUpgradeCheck = 0730;
 				ORGANIZATIONNAME = "Crawford Design Engineering, LLC";
 				TargetAttributes = {
+					5CCE11351D2EC6F100F78F2A = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+					5CCE11611D2FEF8900F78F2A = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = 5CF2BC8B1CF6C2B6001EFBC5;
+					};
 					5CF2BC8B1CF6C2B6001EFBC5 = {
 						CreatedOnToolsVersion = 7.3.1;
 					};
@@ -113,11 +263,30 @@
 			projectRoot = "";
 			targets = (
 				5CF2BC8B1CF6C2B6001EFBC5 /* BPMCalculator */,
+				5CCE11351D2EC6F100F78F2A /* LegacyBPMCalculator */,
+				5CCE11611D2FEF8900F78F2A /* BPMCalculatorTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		5CCE11341D2EC6F100F78F2A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5CCE11481D2EC6F100F78F2A /* LaunchScreen.storyboard in Resources */,
+				5CCE11451D2EC6F100F78F2A /* Assets.xcassets in Resources */,
+				5CCE11431D2EC6F100F78F2A /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5CCE11601D2FEF8900F78F2A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		5CF2BC8A1CF6C2B6001EFBC5 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -131,18 +300,63 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		5CCE11321D2EC6F100F78F2A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5CCE11401D2EC6F100F78F2A /* ViewController.m in Sources */,
+				5CCE113D1D2EC6F100F78F2A /* AppDelegate.m in Sources */,
+				5CCE113A1D2EC6F100F78F2A /* main.m in Sources */,
+				5CCE114F1D2EC70F00F78F2A /* LegacyBPMCalculator.mm in Sources */,
+				5CCE114D1D2EC6FA00F78F2A /* BPMCalculator.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5CCE115E1D2FEF8900F78F2A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5CCE11651D2FEF8900F78F2A /* BPMCalculatorTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		5CF2BC881CF6C2B6001EFBC5 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				5CF2BC921CF6C2B6001EFBC5 /* ViewController.swift in Sources */,
 				5CF2BC901CF6C2B6001EFBC5 /* AppDelegate.swift in Sources */,
+				5CF2BCA21CF6C2D1001EFBC5 /* BPMCalculator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		5CCE11681D2FEF8900F78F2A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5CF2BC8B1CF6C2B6001EFBC5 /* BPMCalculator */;
+			targetProxy = 5CCE11671D2FEF8900F78F2A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin PBXVariantGroup section */
+		5CCE11411D2EC6F100F78F2A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5CCE11421D2EC6F100F78F2A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		5CCE11461D2EC6F100F78F2A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5CCE11471D2EC6F100F78F2A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
 		5CF2BC931CF6C2B6001EFBC5 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -162,6 +376,52 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		5CCE114B1D2EC6F100F78F2A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = LegacyBPMCalculator/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.cdellc.LegacyBPMCalculator;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		5CCE114C1D2EC6F100F78F2A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = LegacyBPMCalculator/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.cdellc.LegacyBPMCalculator;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		5CCE116A1D2FEF8A00F78F2A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = BPMCalculatorTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.cdellc.BPMCalculatorTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BPMCalculator.app/BPMCalculator";
+			};
+			name = Debug;
+		};
+		5CCE116B1D2FEF8A00F78F2A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = BPMCalculatorTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.cdellc.BPMCalculatorTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BPMCalculator.app/BPMCalculator";
+			};
+			name = Release;
+		};
 		5CF2BC9C1CF6C2B6001EFBC5 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -251,10 +511,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = BPMCalculator/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.cdellc.BPMCalculator;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "BPMCalculator-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -262,16 +525,34 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = BPMCalculator/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.cdellc.BPMCalculator;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "BPMCalculator-Bridging-Header.h";
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		5CCE114A1D2EC6F100F78F2A /* Build configuration list for PBXNativeTarget "LegacyBPMCalculator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5CCE114B1D2EC6F100F78F2A /* Debug */,
+				5CCE114C1D2EC6F100F78F2A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		5CCE11691D2FEF8A00F78F2A /* Build configuration list for PBXNativeTarget "BPMCalculatorTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5CCE116A1D2FEF8A00F78F2A /* Debug */,
+				5CCE116B1D2FEF8A00F78F2A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		5CF2BC871CF6C2B6001EFBC5 /* Build configuration list for PBXProject "BPMCalculator" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -288,6 +569,7 @@
 				5CF2BCA01CF6C2B6001EFBC5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

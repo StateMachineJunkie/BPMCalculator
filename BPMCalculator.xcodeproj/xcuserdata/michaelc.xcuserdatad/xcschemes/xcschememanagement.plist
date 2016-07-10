@@ -9,9 +9,29 @@
 			<key>orderHint</key>
 			<integer>0</integer>
 		</dict>
+		<key>LegacyBPMCalculator.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>5CCE11351D2EC6F100F78F2A</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>5CCE11531D2FEEEC00F78F2A</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>5CCE11611D2FEF8900F78F2A</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>5CF2BC8B1CF6C2B6001EFBC5</key>
 		<dict>
 			<key>primary</key>

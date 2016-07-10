@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "5CF2BC8B1CF6C2B6001EFBC5"
-               BuildableName = "BPMCalculator.app"
-               BlueprintName = "BPMCalculator"
+               BlueprintIdentifier = "5CCE11351D2EC6F100F78F2A"
+               BuildableName = "LegacyBPMCalculator.app"
+               BlueprintName = "LegacyBPMCalculator"
                ReferencedContainer = "container:BPMCalculator.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -28,23 +28,13 @@
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "5CCE11531D2FEEEC00F78F2A"
-               BuildableName = "BPMCalculatorTests.xctest"
-               BlueprintName = "BPMCalculatorTests"
-               ReferencedContainer = "container:BPMCalculator.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "5CF2BC8B1CF6C2B6001EFBC5"
-            BuildableName = "BPMCalculator.app"
-            BlueprintName = "BPMCalculator"
+            BlueprintIdentifier = "5CCE11351D2EC6F100F78F2A"
+            BuildableName = "LegacyBPMCalculator.app"
+            BlueprintName = "LegacyBPMCalculator"
             ReferencedContainer = "container:BPMCalculator.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -65,9 +55,9 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "5CF2BC8B1CF6C2B6001EFBC5"
-            BuildableName = "BPMCalculator.app"
-            BlueprintName = "BPMCalculator"
+            BlueprintIdentifier = "5CCE11351D2EC6F100F78F2A"
+            BuildableName = "LegacyBPMCalculator.app"
+            BlueprintName = "LegacyBPMCalculator"
             ReferencedContainer = "container:BPMCalculator.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
@@ -84,9 +74,9 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "5CF2BC8B1CF6C2B6001EFBC5"
-            BuildableName = "BPMCalculator.app"
-            BlueprintName = "BPMCalculator"
+            BlueprintIdentifier = "5CCE11351D2EC6F100F78F2A"
+            BuildableName = "LegacyBPMCalculator.app"
+            BlueprintName = "LegacyBPMCalculator"
             ReferencedContainer = "container:BPMCalculator.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
