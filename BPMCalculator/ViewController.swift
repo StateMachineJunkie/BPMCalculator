@@ -30,8 +30,8 @@ class ViewController: UIViewController {
         sampleButton!.frame = CGRect(x: 60, y: 60, width: 200, height: 44)
         sampleButton!.backgroundColor = UIColor.blueColor()
         sampleButton!.setTitle("Tap me, repeatedly!", forState: .Normal)
-        sampleButton!.setTitleColor(UIColor.whiteColor(), forState: UIControlState.Normal)
-        sampleButton!.setTitleColor(UIColor.blackColor(), forState: UIControlState.Highlighted)
+        sampleButton!.setTitleColor(UIColor.whiteColor(), forState: .Normal)
+        sampleButton!.setTitleColor(UIColor.blackColor(), forState: .Highlighted)
         view.addSubview(sampleButton!)
         
         // BPM display

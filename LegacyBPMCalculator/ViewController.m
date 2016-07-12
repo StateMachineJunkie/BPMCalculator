@@ -42,9 +42,15 @@
     view.backgroundColor = UIColor.whiteColor;
     
     // sample-button
-    sampleButton = [UIButton buttonWithType:UIButtonTypeDetailDisclosure];
+    sampleButton = [UIButton buttonWithType:UIButtonTypeCustom];
+    sampleButton.layer.borderColor = [UIColor blackColor].CGColor;
+    sampleButton.layer.borderWidth = 2;
+    sampleButton.layer.cornerRadius = 5;
     sampleButton.frame = CGRectMake(60, 60, 200, 44);
-    sampleButton.backgroundColor = UIColor.whiteColor;
+    sampleButton.backgroundColor = UIColor.blueColor;
+    [sampleButton setTitle:@"Tap me, repeatedly!" forState:UIControlStateNormal];
+    [sampleButton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
+    [sampleButton setTitleColor:[UIColor blackColor] forState:UIControlStateHighlighted];
     [view addSubview:sampleButton];
     
     // BPM display

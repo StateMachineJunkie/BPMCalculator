@@ -162,12 +162,12 @@
 			isa = PBXGroup;
 			children = (
 				5CF2BC8F1CF6C2B6001EFBC5 /* AppDelegate.swift */,
-				5CF2BC911CF6C2B6001EFBC5 /* ViewController.swift */,
-				5CF2BC931CF6C2B6001EFBC5 /* Main.storyboard */,
 				5CF2BC961CF6C2B6001EFBC5 /* Assets.xcassets */,
-				5CF2BC981CF6C2B6001EFBC5 /* LaunchScreen.storyboard */,
-				5CF2BC9B1CF6C2B6001EFBC5 /* Info.plist */,
 				5CF2BCA11CF6C2D1001EFBC5 /* BPMCalculator.swift */,
+				5CF2BC9B1CF6C2B6001EFBC5 /* Info.plist */,
+				5CF2BC981CF6C2B6001EFBC5 /* LaunchScreen.storyboard */,
+				5CF2BC931CF6C2B6001EFBC5 /* Main.storyboard */,
+				5CF2BC911CF6C2B6001EFBC5 /* ViewController.swift */,
 			);
 			path = BPMCalculator;
 			sourceTree = "<group>";
