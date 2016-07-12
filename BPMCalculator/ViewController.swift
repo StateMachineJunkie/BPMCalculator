@@ -23,9 +23,15 @@ class ViewController: UIViewController {
         view.backgroundColor = UIColor.whiteColor()
         
         // sample-button
-        sampleButton = UIButton(type: .DetailDisclosure)
+        sampleButton = UIButton(type: .Custom)
+        sampleButton!.layer.borderColor = UIColor.blackColor().CGColor
+        sampleButton!.layer.borderWidth = 2
+        sampleButton!.layer.cornerRadius = 5
         sampleButton!.frame = CGRect(x: 60, y: 60, width: 200, height: 44)
-        sampleButton!.backgroundColor = UIColor.whiteColor()
+        sampleButton!.backgroundColor = UIColor.blueColor()
+        sampleButton!.setTitle("Tap me, repeatedly!", forState: .Normal)
+        sampleButton!.setTitleColor(UIColor.whiteColor(), forState: UIControlState.Normal)
+        sampleButton!.setTitleColor(UIColor.blackColor(), forState: UIControlState.Highlighted)
         view.addSubview(sampleButton!)
         
         // BPM display
