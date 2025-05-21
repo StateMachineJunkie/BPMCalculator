@@ -46,7 +46,7 @@ class ViewController: UIViewController {
     }()
     
     override func loadView() {
-        let view = UIView(frame: CGRect(x: 0, y: 0, width: 320, height: 480))
+        let view = KeyView(with: sample)
         
         view.backgroundColor = .white
         view.addSubview(sampleButton)
