@@ -10,63 +10,62 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    let bpmCalculator = BPMCalculator(maxSamples: 10)
-    var BPMLabel: UILabel?
-    var BPMValue: UILabel?
-    var sampleButton: UIButton?
-    var STDDEVLabel: UILabel?
-    var STDDEVValue: UILabel?
+    private let bpmCalculator = BPMCalculator(maxSamples: 10)
+    
+    private var bpmLabel: UILabel = {
+        let label = UILabel(frame: CGRect(x: 60, y: 120, width: 80, height: 22))
+        label.text = "BPM:"
+        return label
+    }()
+    
+    private var bpmValue: UILabel = {
+        UILabel(frame: CGRect(x: 160, y: 120, width: 80, height: 22))
+    }()
+    
+    private var sampleButton: UIButton = {
+        let button = UIButton(type: .custom)
+        button.layer.borderColor = UIColor.black.cgColor
+        button.layer.borderWidth = 2
+        button.layer.cornerRadius = 5
+        button.frame = CGRect(x: 60, y: 60, width: 200, height: 44)
+        button.backgroundColor = .blue
+        button.setTitle("Tap me, repeatedly!", for: .normal)
+        button.setTitleColor(UIColor.white, for: .normal)
+        button.setTitleColor(UIColor.black, for: .highlighted)
+        return button
+    }()
+    
+    private var stddevLabel: UILabel = {
+        let label = UILabel(frame: CGRect(x: 60, y: 150, width: 80, height: 22))
+        label.text = "STDDEV:"
+        return label
+    }()
+    
+    private var stddevValue: UILabel = {
+        UILabel(frame: CGRect(x: 160, y: 150, width: 80, height: 22))
+    }()
     
     override func loadView() {
-        // view
         let view = UIView(frame: CGRect(x: 0, y: 0, width: 320, height: 480))
-        view.backgroundColor = UIColor.whiteColor()
         
-        // sample-button
-        sampleButton = UIButton(type: .Custom)
-        sampleButton!.layer.borderColor = UIColor.blackColor().CGColor
-        sampleButton!.layer.borderWidth = 2
-        sampleButton!.layer.cornerRadius = 5
-        sampleButton!.frame = CGRect(x: 60, y: 60, width: 200, height: 44)
-        sampleButton!.backgroundColor = UIColor.blueColor()
-        sampleButton!.setTitle("Tap me, repeatedly!", forState: .Normal)
-        sampleButton!.setTitleColor(UIColor.whiteColor(), forState: .Normal)
-        sampleButton!.setTitleColor(UIColor.blackColor(), forState: .Highlighted)
-        view.addSubview(sampleButton!)
-        
-        // BPM display
-        BPMLabel = UILabel(frame: CGRect(x: 60, y: 120, width: 80, height: 22))
-        view.addSubview(BPMLabel!)
-        
-        BPMValue = UILabel(frame: CGRect(x: 160, y: 120, width: 80, height: 22))
-        view.addSubview(BPMValue!)
-        
-        // STDDEV display
-        STDDEVLabel = UILabel(frame: CGRect(x: 60, y: 150, width: 80, height: 22))
-        view.addSubview(STDDEVLabel!)
-        
-        STDDEVValue = UILabel(frame: CGRect(x: 160, y: 150, width: 80, height: 22))
-        view.addSubview(STDDEVValue!)
+        view.backgroundColor = .white
+        view.addSubview(sampleButton)
+        view.addSubview(bpmLabel)
+        view.addSubview(bpmValue)
+        view.addSubview(stddevLabel)
+        view.addSubview(stddevValue)
         
         self.view = view
     }
     
     override func viewDidLoad() {
-        guard let BPMLabel = BPMLabel,
-            //            let sampleButton = sampleButton,
-            let STDDEVLabel = STDDEVLabel else { return }
-        BPMLabel.text = "BPM:"
-        sampleButton!.addTarget(self, action: #selector(sample(_:)), forControlEvents: .TouchUpInside)
-        //sampleButton.titleLabel!.text = "Tap Me!"
-        STDDEVLabel.text = "STDDEV:"
+        sampleButton.addTarget(self, action: #selector(sample), for: .touchUpInside)
     }
     
-    func sample(sender: AnyObject) {
+    @objc func sample(sender: AnyObject) {
         let result = bpmCalculator.inputSample()
-        guard let BPMValue = BPMValue,
-            let STDDEVValue = STDDEVValue where result.0 > 0 else { return }
-        BPMValue.text = "\(result.0)"
-        STDDEVValue.text = "\(result.1)"
+        guard result.0 > 0 else { return }
+        bpmValue.text = "\(result.0)"
+        stddevValue.text = "\(result.1)"
     }
 }
-

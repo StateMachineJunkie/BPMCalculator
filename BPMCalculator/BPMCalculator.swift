@@ -44,9 +44,13 @@ class BPMCalculator: NSObject {
     
     init(maxSamples: size_t) {
         self.maxSamples = maxSamples
-        let pointer = UnsafeMutablePointer<mach_timebase_info_data_t>.alloc(1)
-        mach_timebase_info(&pointer.memory)
+        let pointer = UnsafeMutablePointer<mach_timebase_info_data_t>.allocate(capacity: 1)
+        mach_timebase_info(&pointer.pointee)
         timebaseInfo = pointer
+    }
+    
+    deinit {
+        timebaseInfo.deallocate()
     }
     
     /// Invoke this method periodically. It's timestamp will be added to others and
@@ -73,7 +77,7 @@ class BPMCalculator: NSObject {
         // compute a BPM value. We can also store it in our history buffer and then
         // use that data to calculate the running average and the standard deviation.
         if delta > 0 {
-            let elapsedTime = delta * UInt64(timebaseInfo.memory.numer) / UInt64(timebaseInfo.memory.denom)
+            let elapsedTime = delta * UInt64(timebaseInfo.pointee.numer) / UInt64(timebaseInfo.pointee.denom)
             
             if ( buffer.count == index ) {
                 buffer.append(Double(elapsedTime) * 1.0e-9)
